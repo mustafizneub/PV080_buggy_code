@@ -22,9 +22,8 @@ def print_nametag(format_string, person):
     print(format_string.format(person=person))
 
 
-def fetch_website(urllib_version, url):
+def fetch_website(url):
     # Fetch and print the requested URL
- 
     try:
         http = urllib.PoolManager()
         http.request('GET', url)
